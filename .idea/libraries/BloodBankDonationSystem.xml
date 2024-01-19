@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BloodBankDonationSystem">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/BloodBankDonationSystem.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

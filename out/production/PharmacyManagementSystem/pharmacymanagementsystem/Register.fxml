@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="525.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pharmacymanagementsystem.RegisterController">
+
+    <children>
+        <AnchorPane prefHeight="99.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, red, #FCAEAE);">
+            <children>
+                <Label layoutX="115.0" layoutY="25.0" prefHeight="48.0" prefWidth="307.0" text="User Registration" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="38.0" />
+                    </font>
+                </Label>
+                <Button fx:id="closeButton" layoutX="466.0" layoutY="12.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #FF0000;" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="11.773585319519043" />
+                    </font>
+               <graphic>
+                        <FontAwesomeIcon glyphName="CLOSE" />
+               </graphic>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Button fx:id="registerButton" layoutX="83.0" layoutY="457.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="25.0" prefWidth="360.0" style="-fx-background-color: #FF0000;" styleClass="login-btn" stylesheets="@loginDesign.css" text="REGISTER" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label fx:id="registerMessageLabel" alignment="CENTER" layoutX="151.0" layoutY="114.0" textFill="#10ff40">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="confirmPasswordMessageLabel" alignment="CENTER" layoutX="184.0" layoutY="365.0" prefHeight="8.0" prefWidth="320.0" textFill="RED">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <VBox layoutX="83.0" layoutY="122.0" prefHeight="298.0" prefWidth="360.0" spacing="10">
+            <Label text="Full Name">
+                <font>
+                    <Font name="Century Gothic" size="15.0" />
+                </font>
+            </Label>
+            <TextField fx:id="fullnameTextField" prefHeight="25.0" prefWidth="335.0" promptText="Full Name" />
+            <Label text="Email Address">
+                <font>
+                    <Font name="Century Gothic" size="15.0" />
+                </font>
+            </Label>
+            <TextField fx:id="emailAddressTextField" prefHeight="25.0" prefWidth="335.0" promptText="Email" />
+            <Label text="Username">
+                <font>
+                    <Font name="Century Gothic" size="15.0" />
+                </font>
+            </Label>
+            <TextField fx:id="usernameTextField" prefHeight="25.0" prefWidth="335.0" promptText="Username" />
+            <Label text="Password">
+                <font>
+                    <Font name="Century Gothic" size="15.0" />
+                </font>
+            </Label>
+            <PasswordField fx:id="enterPasswordField" prefHeight="25.0" prefWidth="335.0" promptText="Password" />
+            <Label text="Confirm Password">
+                <font>
+                    <Font name="Century Gothic" size="15.0" />
+                </font>
+            </Label>
+            <PasswordField fx:id="confirmPasswordField" prefHeight="25.0" prefWidth="335.0" promptText="Confirm Password" />
+        </VBox>
+    </children>
+</AnchorPane>

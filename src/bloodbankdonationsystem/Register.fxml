@@ -30,7 +30,7 @@
                 </Button>
             </children>
         </AnchorPane>
-        <Button fx:id="registerButton" layoutX="83.0" layoutY="467.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="25.0" prefWidth="360.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="REGISTER" textFill="WHITE">
+        <Button fx:id="registerButton" layoutX="83.0" layoutY="467.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="25.0" prefWidth="360.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Register" textFill="WHITE">
             <font>
                 <Font name="Century Gothic Bold" size="12.0" />
             </font>

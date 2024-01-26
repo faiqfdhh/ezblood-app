@@ -40,7 +40,10 @@ and open the template in the editor.
 }
 
 .nav-btn{
-    -fx-background-color:transparent;
+    -fx-background-color:linear-gradient(to bottom right, red,white);
+    -fx-border-radius:20px;
+    -fx-background-radius:20px;
+    -fx-color:black;
     -fx-cursor:hand;
     -fx-font-size:14px;
     -fx-font-family:"Arial";

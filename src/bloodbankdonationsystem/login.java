@@ -28,7 +28,7 @@ import javafx.stage.StageStyle;
  *
  * @author WINDOWS 10
  */
-public class FXMLDocumentController implements Initializable {
+public class login implements Initializable {
     
     @FXML
     private AnchorPane main_form;
@@ -77,7 +77,7 @@ public class FXMLDocumentController implements Initializable {
                 alert = new Alert(AlertType.ERROR);
                 alert.setTitle("Error Message");
                 alert.setHeaderText(null);
-                alert.setContentText("Please fill all blank fields");
+                alert.setContentText("Please fill all the fields");
                 alert.showAndWait();
             }else{
                 if(result.next()){
@@ -87,7 +87,7 @@ public class FXMLDocumentController implements Initializable {
                     alert = new Alert(AlertType.INFORMATION);
                     alert.setTitle("Information Message");
                     alert.setHeaderText(null);
-                    alert.setContentText("Successfully Login");
+                    alert.setContentText("Successfully logged in!");
                     alert.showAndWait();
                     
                     // HIDE YOUR LOGIN FORM
@@ -115,7 +115,7 @@ public class FXMLDocumentController implements Initializable {
                     
                 }else{
                     alert = new Alert(AlertType.ERROR);
-                    alert.setTitle("Error Message");
+                    alert.setTitle("Error ");
                     alert.setHeaderText(null);
                     alert.setContentText("Wrong Username/Password");
                     alert.showAndWait();

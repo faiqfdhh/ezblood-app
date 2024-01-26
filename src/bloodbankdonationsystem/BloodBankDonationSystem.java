@@ -24,7 +24,7 @@ public class BloodBankDonationSystem extends Application {
     private double y = 0;
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
 
         Font.loadFont(getClass().getResourceAsStream("../resources/fonts/Metropolis-Regular.otf"), 16);
         
